@@ -9,7 +9,7 @@ import {
   deleteDoc,
   doc,
 } from "firebase/firestore";
-import { async } from '@firebase/util';
+// import { async } from '@firebase/util';
 
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
 
     }
     getUsers()
-  }, [])
+  }, [usersCollectionRef])
 
   return (
     <div className="App">
